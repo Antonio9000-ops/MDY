@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+/* Fuente global para todo el documento */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Fondo verde oscuro */
+.bg-green {
+    background-color: #005728;
+}
+
+/* Estilos del footer */
+.footer-mdy {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #005728 !important; /* Fondo verde oscuro */
+    text-align: center; /* Centrar el texto del footer */
+    padding: 30px 0; /* Añadir padding vertical */
+}
+
+/* Logo estilo texto */
+.footer-logo .logo-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    display: inline-block; /* Para que esté en línea con otros elementos si los hay */
+}
+
+/* Redes sociales */
+.footer-social a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.footer-social a i {
+    margin-right: 5px;
+}
+
+.footer-mdy .footer-social {
+    margin-top: 15px; /* Espacio entre el logo y las redes sociales */
+}
+
+.footer-mdy .footer-social a {
+    margin: 0 10px;
+}
+
+/* Línea separadora */
+.footer-divider {
+    border-top: 1px solid white;
+    margin: 10px 0;
+}
+
+.footer-mdy .footer-divider {
+    margin: 20px 0;
+}
+
+/* Estilos de los enlaces inferiores */
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-mdy .footer-bottom {
+    font-size: 0.9rem;
+}
+
+.footer-mdy .footer-links a {
+    margin: 0 10px;
+}
+
+/*Links*/
+.address-link {
+    text-decoration: none;
+    color: gray;
+}
+
+/*BANNER*/
+.banner-section {
+    background-image: url('../img/banner.jpg');
+    /* Reemplaza con la ruta de tu imagen */
+    background-size: cover;
+    /* Cubre todo el espacio del banner */
+    background-position: center;
+    /* Centra la imagen */
+    color: white;
+    /* Texto blanco para contraste */
+    padding: 100px 0;
+    /* Ajusta el padding vertical para la altura del banner */
+    text-align: center;
+}
+
+.banner-section .container {
+    /* Opcional: para controlar el ancho del contenido dentro del banner */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner-section h1 {
+    font-size: 3.5rem;
+    /* Ajusta el tamaño del título */
+    margin-bottom: 1rem;
+}
+
+.banner-section p {
+    font-size: 1.5rem;
+    /* Ajusta el tamaño del subtítulo */
+    margin-bottom: 2rem;
+}
+
+.btn-outline-light {
+    border-color: #f8f9fa;
+    color: #f8f9fa;
+}
+
+.btn-outline-light:hover {
+    background-color: #f8f9fa;
+    color: #007bff;
+    /* O el color de tu tema */
+}
+
+/*MENU*/
+.navbar {
+    background-color: #e0e0e0 !important;
+    /* Gris claro */
+}
+
+.navbar-brand img {
+    max-height: 30px;
+    /* Ajusta la altura de la imagen del logo */
+}
+
+.navbar-brand .logo-text {
+    display: none;
+    /* Oculta el texto del logo si solo quieres la imagen */
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold !important;
+    /* Letras de menú más negritas */
+    color: #212529 !important;
+    /* Color del texto del menú */
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #f8f9fa;
+    /* Gris claro al pasar el mouse */
+    color: #000000;
+    /* O el color de texto que desees al hacer hover */
+    color: #212529 !important;
+    /* Color del texto al hacer hover */
+}
+
+/* Estilos específicos para la página "Nosotros" */
+header {
+    background: url('../img/nosotros-banner.jpeg') center center/cover no-repeat;
+    color: white;
+    padding: 120px 0;
+    text-shadow: 1px 1px 5px #000;
+    opacity: 0.8;
+}
+
+.section-title {
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/* Estilos específicos para la sección de "MDY en Cifras" */
+.cifras-section {
+    background-color: #f8f9fa; /* Un fondo gris claro para diferenciar la sección */
+    padding: 40px 0; /* Espacio vertical alrededor de la sección */
+    text-align: center; /* Centrar el contenido */
+}
+
+.cifras-container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+    display: flex; /* Usar flexbox para la disposición de los bloques de cifras */
+    flex-wrap: wrap; /* Permitir que los bloques pasen a la siguiente línea en pantallas más pequeñas */
+    justify-content: space-around; /* Espaciar los bloques uniformemente */
+}
+
+.cifra-bloque {
+    background-color: #005728; /* Fondo verde oscuro para cada bloque */
+    color: white; /* Texto blanco */
+    padding: 20px; /* Espacio interno */
+    margin: 15px; /* Espacio entre bloques */
+    border-radius: 5px; /* Bordes redondeados */
+    flex-basis: calc(16.66% - 30px); /* Aproximadamente 1/6 del ancho con márgenes */
+    box-sizing: border-box; /* Incluir padding y border en el ancho */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cifra-bloque i {
+    font-size: 2.5rem; /* Tamaño de los íconos (si usas FontAwesome u otro) */
+    margin-bottom: 10px;
+}
+
+.cifra-numero {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.cifra-texto {
+    font-size: 0.9rem; /* Corrección: Tamaño de fuente más legible */
+    text-align: center;
+}
+
+/* Estilos para la sección de Misión y Visión */
+/* Estilos para la sección de Misión y Visión */
+.mision-vision-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Espacia los contenedores de Misión y Visión */
+    padding: 40px 20px; /* Añade un poco de padding alrededor */
+}
+
+.mision-vision-card {
+    background-color: #fff; /* Fondo blanco para las tarjetas */
+    border: 1px solid #ddd; /* Borde sutil */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    flex-basis: calc(50% - 40px); /* Ocupa la mitad del ancho con márgenes */
+    box-sizing: border-box; /* Incluye padding y border en el ancho */
+}
+
+.mision-vision-card.vision,
+.mision-vision-card.mision { /* Corrección: Aplica el borde a ambas clases individualmente */
+    border-color: #28a745; /* Borde verde para Misión y Visión */
+}
+
+.mision-vision-icon {
+    color: #28a745; /* Color verde para los íconos */
+    font-size: 2.5rem; /* Tamaño grande para los íconos */
+    margin-bottom: 15px;
+}
+
+.mision-vision-title {
+    color: #343a40; /* Color de texto oscuro para los títulos */
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.mision-vision-text {
+    color: #6c757d; /* Color de texto gris para la descripción */
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Estilos para la sección de Valores */
+.valores-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-weight: bold;
+    color: #343a40; /* Color de texto oscuro para el título */
+}
+
+.valores-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    margin-top: 30px; /* Espacio entre el título y los valores */
+}
+
+.valor-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(33.33% - 40px); /* Aproximadamente 1/3 del ancho */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.valor-icon {
+    color: #28a745; /* Color verde similar al logo */
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.valor-title {
+    color: #343a40;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.valor-description {
+    color: #6c757d;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-section {
+    padding: 40px 40px;
+    background-color: #f9f9f9; /* Fondo claro para la sección */
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Espacio entre la imagen y el formulario */
+    align-items: center; /* Alinea la imagen y el formulario en la parte superior */
+}
+
+.contact-image-area {
+    flex: 1 1 400px; /* Ocupa un poco más de la mitad del espacio inicialmente */
+    text-align: center;
+}
+
+.contact-image {
+    max-width: 100%;
+    height: 500px;
+    border-radius: 8px; /* Opcional: Bordes redondeados para la imagen */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Opcional: Sombra suave */
+}
+
+.contact-text {
+    color: #555;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.contact-form-area {
+    flex: 1 1 500px; /* Ocupa un poco más de la mitad del espacio inicialmente */
+    margin-top: 20px;
+}
+
+.contact-form-title {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    color: #333;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-textarea {
+    resize: vertical; /* Permite al usuario redimensionar verticalmente */
+}
+
+.form-check {
+    align-items: center;
+}
+
+.form-check-input {
+    margin-right: 10px;
+}
+
+.btn-enviar {
+    background-color: #28a745; /* Verde similar al logo */
+    color: white;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.btn-enviar:hover {
+    background-color: #1e7e34;
+}
+
+
+
+
+
+
+.service-section {
+    padding: 40px 20px; /* Optional: Add some padding around the section */
+    background-color: #f8f9fa; /* Optional: Add a background color to the section */
+}
+
+.service-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex; /* Añadir */
+    flex-direction: column; /* Añadir */
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card img {
+    width: 100%;
+    height: 100%; /* Cambiar de auto */
+    object-fit: cover; /* Añadir */
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.service-card:hover img {
+    filter: grayscale(0%);
+}
+
+.service-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Cambiar */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 50%); /* Modificar */
+    color: white;
+    padding: 1.5rem; /* Modificar */
+    display: flex; /* Añadir */
+    flex-direction: column; /* Añadir */
+    justify-content: flex-end; /* Añadir */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.service-card:hover .service-overlay {
+    opacity: 1;
+}
+
+.service-title {
+    font-size: 1.5rem; /* Modificar tamaño */
+    line-height: 1.3; /* Añadir */
+    margin-bottom: 0.5rem; /* Modificar */
+}
+.service-description {
+    font-size: 1rem; /* Modificar tamaño */
+    margin-bottom: 1rem; /* Modificar */
+}
+
+.service-link {
+    color: #28a745;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.service-link i {
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+/* Media queries */
+@media (max-width: 768px) {
+    .cifra-bloque {
+        flex-basis: calc(50% - 30px); /* 1/2 del ancho en móviles */
+    }
+    .mision-vision-card {
+        flex-basis: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+        margin: 20px 0;
+    }
+    .valor-card {
+        flex-basis: 100%; /* Ocupa todo el ancho en móviles */
+        margin: 20px 0;
+    }
+    .contact-content {
+        flex-direction: column; /* Apila la imagen y el formulario en pantallas pequeñas */
+        align-items: center;
+    }
+
+    .contact-image-area {
+        margin-bottom: 30px;
+    }
+    .contact-form-area {
+        margin-top: 0; /* Elimina el margen superior en móviles si se ve demasiado espacio */
+    }
+    .service-title {
+        font-size: 1.2rem !important;
+    }
+    .service-description {
+        font-size: 0.9rem !important;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .cifra-bloque {
+        flex-basis: calc(33.33% - 30px); /* 1/3 del ancho en tabletas */
+    }
+    .valor-card {
+        flex-basis: calc(50% - 40px); /* Ocupa la mitad del ancho en tabletas */
+    }
+}
